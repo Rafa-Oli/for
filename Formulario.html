@@ -19,7 +19,7 @@
                 <h1 id="title">Registration of DEVs</h1>
                 <p id="caption">Complete your information</p>
             </div>
-        
+
             <form>
                 <fieldset class="group">
                     <div class="field">
@@ -30,29 +30,30 @@
                         <label for="surname">Surname</label>
                         <input type="text" name="surname" id="surname" required>
                     </div>
+                    <div class="field">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" required width="100%">
+                    </div>
                 </fieldset>
-                <div class="field">
-                    <label for="email">Email</label>
-                    <input type="email" name="email" id="email" required>
-                </div>
-                <div class="field">
+                <div class="devweb">
                     <label>
                         <strong>
                             Which side of the application do you develop on?
                         </strong>
                     </label>
-                    <label>
+                    <label class="group-dev">
                         <input type="radio" name="devweb" value="frontend" checked> Front-end
                     </label>
-                    <label>
-                        <input type="radio" name="devweb" value="backend">Back-end
+                    <label class="group-dev">
+                        <input type="radio" name="devweb" value="backend"> Back-end
                     </label>
-                    <label>
-                        <input type="radio" name="devweb" value="fullstack">Fullstack
+                    <label class="group-dev">
+                        <input type="radio" name="devweb" value="fullstack"> Fullstack
                     </label>
+
                 </div>
-                <div class="field">
-                    <label for="seniority"><strong> Seniority</strong></label>
+                <div class="seniority">
+                    <label for="seniority"><strong> Seniority: </strong></label>
                     <select id="Seniority" required>
                         <option selected disabled value="">Select</option>
                         <option>Junior</option>
@@ -63,34 +64,32 @@
                 <fieldset class="group">
                     <div id="check">
                         <label for=""><strong>Select the technologies you use: </strong></label><br><br>
-                        <input type="checkbox" name="tecnologia1" id="tecnologia1" value="HTML">
+                        <input class="checkbox" type="checkbox" name="tecnologia1" id="tecnologia1" value="HTML">
                         <label for="tecnologia1">HTML</label>
-                        <input type="checkbox" name="tecnologia2" id="tecnologia2" value="CSS">
+                        <input class="checkbox" type="checkbox" name="tecnologia2" id="tecnologia2" value="CSS">
                         <label for="tecnologia3">CSS</label>
-                        <input type="checkbox" name="tecnologia3" id="tecnologia3" value="Javascript">
+                        <input class="checkbox" type="checkbox" name="tecnologia3" id="tecnologia3" value="Javascript">
                         <label for="tecnologia1">Javascript</label>
-                        <input type="checkbox" name="tecnologia4" id="tecnologia4" value="PHP">
+                        <input class="checkbox" type="checkbox" name="tecnologia4" id="tecnologia4" value="PHP">
                         <label for="tecnologia4">PHP</label>
-                        <input type="checkbox" name="tecnologia5" id="tecnologia5" value="C#">
+                        <input class="checkbox" type="checkbox" name="tecnologia5" id="tecnologia5" value="C#">
                         <label for="tecnologia5">C#</label>
-                        <input type="checkbox" name="tecnologia6" id="tecnologia6" value="Python">
+                        <input class="checkbox" type="checkbox" name="tecnologia6" id="tecnologia6" value="Python">
                         <label for="tecnologia6">Python</label>
-                        <input type="checkbox" name="tecnologia7" id="tecnologia7" value="Java">
+                        <input class="checkbox" type="checkbox" name="tecnologia7" id="tecnologia7" value="Java">
                         <label for="tecnologia7">Java</label>
                     </div>
                 </fieldset>
-                <div class="field">
+                <div class="experience">
                     <br>
-                    <label for="experience"><strong>Tell us a little about your experience: </strong></label>
+                    <label for="experience" class="experience-label"><strong>Tell us a little about your experience:
+                        </strong></label>
                     <textarea rows="6" style="width: 26em;" id="experience" name="experience"></textarea>
                 </div>
-                <!-- <button class="button" type="submit">Concluded</button> -->
+                <button class="button" type="submit">Concluded</button>
             </form>
         </div>
-
-
     </div>
-
 </body>
 
 </html>
